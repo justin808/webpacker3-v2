@@ -6,12 +6,13 @@ git_source(:github) do |repo_name|
 end
 
 gem 'webpacker', '~> 3.0'
-gem 'react_on_rails', path: '../../react-on-rails/react_on_rails'
+# gem 'react_on_rails', path: '../../react-on-rails/react_on_rails'
+gem 'react_on_rails', github: 'shakacode/react_on_rails', branch: 'rails-webpacker-using-webpacker-for-generated-app'
+
+gem 'pg'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
